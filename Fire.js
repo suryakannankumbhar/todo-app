@@ -1,5 +1,5 @@
 import firebase from 'firebase';
-import 'firestore';
+import 'firebase/firestore';
 
 const firebaseConfig = {
     apiKey: 'AIzaSyB0L4BbrP5NNusBNzf3vxk4NyAQzPeEfwI',
@@ -10,7 +10,7 @@ const firebaseConfig = {
     appId: '1:476596984653:web:c40615fa24fbe79801b504',
 };
 
-export default class Fire {
+class Fire {
     constructor(callback) {
         this.init(callback);
     }
@@ -33,3 +33,4 @@ export default class Fire {
         });
     }
 }
+export default Fire;
